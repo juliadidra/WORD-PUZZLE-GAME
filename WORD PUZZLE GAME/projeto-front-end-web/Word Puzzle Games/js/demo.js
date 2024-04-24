@@ -1,4 +1,4 @@
-buzz.defaults.formats = [ 'ogg', 'mp3' ];
+buzz.defaults.formats = [ 'ogg', 'mp3', 'wav' ];
 buzz.defaults.preload = 'metadata';
 
 
@@ -15,7 +15,11 @@ var games = [
     { img: 'img/turtle.png', color:'#d5ea86', word: 'turtle', sound: '' },
     { img: 'img/lion1.png', color:'#dd992d', word: 'lion', sound: 'sounds/lion' },
     //objetos novos
-    { img: 'img/cow.png', color:'#fffff', word: 'cow', sound: 'sounds/cow' }
+    { img: 'img/cow.png', color:'#fffff', word: 'cow', sound: 'sounds/cow' },
+    { img: 'img/rooster.png', color:'#ffca8a', word: 'rooster', sound: 'sounds/rooster' },
+    { img: 'img/dog.png', color:'#c27e4e', word: 'dog', sound: 'sounds/dog' },
+    { img: 'img/owl.png', color:'#783e22', word: 'owl', sound: 'sounds/owl' },
+    { img: 'img/duck.png', color:'#fbdd56', word: 'duck', sound: 'sounds/duck' }
 ];
 
 //criou um group dos sons
