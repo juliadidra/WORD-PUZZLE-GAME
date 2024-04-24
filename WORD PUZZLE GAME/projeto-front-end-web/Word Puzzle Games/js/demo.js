@@ -25,8 +25,11 @@ var games = [
 //criou um group dos sons
 var winSound        = new buzz.sound('sounds/win' ),
     errorSound      = new buzz.sound('sounds/error' ),
-    alphabetSounds  = {},
-    alphabet        = 'abcdefghijklmnopqrstuvwxyz'.split( '' );
+    alphabetSounds  = {},  //objeto que irá armazenar o som referente a cada letra do alfabeto
+    alphabet        = 'abcdefghijklmnopqrstuvwxyz'.split( '' ); // string com as letras do alfabeto em que é feito um split para pegar cada letra separadamente
+    
+    //alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'] 
+    // alternativa ao uso do split 
 
 
 // percorre a string alphabet e reproduz o som referente a cada letra
