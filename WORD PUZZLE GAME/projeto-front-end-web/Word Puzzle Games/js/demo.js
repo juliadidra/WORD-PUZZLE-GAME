@@ -14,6 +14,7 @@ var games = [
     { img: 'img/tiger.png', color:'#b3eef4', word: 'tiger', sound: 'sounds/meow' },
     { img: 'img/turtle.png', color:'#d5ea86', word: 'turtle', sound: '' },
     { img: 'img/lion1.png', color:'#dd992d', word: 'lion', sound: 'sounds/lion' },
+    //objetos novos
     { img: 'img/cow.png', color:'#fffff', word: 'cow', sound: 'sounds/cow' }
 ];
 
