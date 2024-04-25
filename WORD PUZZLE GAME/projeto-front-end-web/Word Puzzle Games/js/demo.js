@@ -82,15 +82,13 @@ var winSound = new buzz.sound('sounds/win'),
   alphabetSounds = {}, //objeto que irá armazenar o som referente a cada letra do alfabeto
   alphabet = 'abcdefghijklmnopqrstuvwxyz'.split(''); // string com as letras do alfabeto em que é feito um split para pegar cada letra separadamente
 
-//alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-// alternativa ao uso do split
 
 // percorre a string alphabet e reproduz o som referente a cada letra
 for (var i in alphabet) {
   var letter = alphabet[i]; // letra do alfabeto
   alphabetSounds[letter] = new buzz.sound(
     'sounds/kid/' + letter
-  ); /*letra dentro do objeto alphabetSounds, onde será instanciado um objeto que chama o som referente a eltra*/
+  ); /*letra dentro do objeto alphabetSounds, onde será instanciado um objeto que chama o som referente a letra*/
 }
 
 $(function () {
@@ -98,7 +96,7 @@ $(function () {
     $('#warning').show();
   }
 
-  // inicia com 0 e as demais variaveis "acompanham" a idx. Quando a função buildGame e chamada essa variavel é incrementada ou decrementada
+  // idx inicia com 0. Quando a função buildGame é chamada essa variavel é incrementada ou decrementada
   var idx = 0, // variavel
     $container = $('#container'),
     $picture = $('#picture'),
@@ -109,14 +107,14 @@ $(function () {
     return false;
   });
 
-  // muda para o proximo animal e a imagem
+  // muda para o proximo animal
   $('#next').click(function () {
     refreshGame();
     buildGame(++idx);
     return false;
   });
 
-  // muda para o animal anterior e a imagem
+  // muda para o animal anterior 
   $('#previous').click(function () {
     refreshGame();
     buildGame(--idx);
@@ -135,7 +133,7 @@ $(function () {
     return false;
   });
 
-  // deixa os valores de models e letters
+  // deixa os valores de models e letters zerados 
   function refreshGame() {
     $('#models').html('');
     $('#letters').html('');
