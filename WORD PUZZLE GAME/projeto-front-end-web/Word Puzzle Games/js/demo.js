@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
 buzz.defaults.formats = ['ogg', 'mp3', 'wav'];
-=======
-buzz.defaults.formats = [ 'ogg', 'mp3', 'wav' ]; // adicionamos mais uma extensão de audio
->>>>>>> 2cc18b5e3cbe7ccc4702b14adac0b59aa2195332
+
+buzz.defaults.formats = ['ogg', 'mp3', 'wav']; // adicionamos mais uma extensão de audio
+
 buzz.defaults.preload = 'metadata';
 
 // array de objetos com as informações do animal (imagem, cor, palavra e som)
@@ -29,7 +29,12 @@ var games = [
   },
   { img: 'img/bull.png', color: '#ff5f09', word: 'bull', sound: 'sounds/bull' },
   { img: 'img/rabbit.png', color: '#c81f27', word: 'rabbit', sound: '' },
-  { img: 'img/tiger.png', color: '#b3eef4', word: 'tiger', sound: '' },
+  {
+    img: 'img/tiger.png',
+    color: '#b3eef4',
+    word: 'tiger',
+    sound: 'sounds/tigger',
+  },
   { img: 'img/turtle.png', color: '#d5ea86', word: 'turtle', sound: '' },
   {
     img: 'img/lion1.png',
@@ -56,26 +61,29 @@ var games = [
     word: 'hipoppotamus',
     sound: '',
   },
-  { img: 'img/leopard.png', color: '#fb8b24', word: 'leopard', sound: '' },
+  {
+    img: 'img/leopard.png',
+    color: '#fb8b24',
+    word: 'leopard',
+    sound: 'sounds/leopard',
+  },
   { img: 'img/cat.png', color: '#f18701', word: 'cat', sound: 'sounds/meow' },
 ];
 
 //criou um group dos sons
-<<<<<<< HEAD
+//<<<<<<< HEAD
 var winSound = new buzz.sound('sounds/win'),
   errorSound = new buzz.sound('sounds/error'),
   alphabetSounds = {},
   alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-=======
-var winSound        = new buzz.sound('sounds/win' ),
-    errorSound      = new buzz.sound('sounds/error' ),
-    alphabetSounds  = {},  //objeto que irá armazenar o som referente a cada letra do alfabeto
-    alphabet        = 'abcdefghijklmnopqrstuvwxyz'.split( '' ); // string com as letras do alfabeto em que é feito um split para pegar cada letra separadamente
-    
-    //alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'] 
-    // alternativa ao uso do split 
 
->>>>>>> 2cc18b5e3cbe7ccc4702b14adac0b59aa2195332
+var winSound = new buzz.sound('sounds/win'),
+  errorSound = new buzz.sound('sounds/error'),
+  alphabetSounds = {}, //objeto que irá armazenar o som referente a cada letra do alfabeto
+  alphabet = 'abcdefghijklmnopqrstuvwxyz'.split(''); // string com as letras do alfabeto em que é feito um split para pegar cada letra separadamente
+
+//alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+// alternativa ao uso do split
 
 // percorre a string alphabet e reproduz o som referente a cada letra
 for (var i in alphabet) {
