@@ -1,5 +1,3 @@
-//<<<<<<< HEAD
-buzz.defaults.formats = ['ogg', 'mp3', 'wav'];
 
 buzz.defaults.formats = ['ogg', 'mp3', 'wav']; // adicionamos mais uma extensão de audio
 
