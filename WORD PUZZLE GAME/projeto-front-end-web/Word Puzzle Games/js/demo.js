@@ -6,74 +6,29 @@ buzz.defaults.preload = 'metadata';
 // array de objetos com as informações do animal (imagem, cor, palavra e som)
 var games = [
   { img: 'img/koala.png', color: '#176580', word: 'koala', sound: '' },
-  {
-    img: 'img/elephant1.png',
-    color: '#a36513',
-    word: 'elephant',
-    sound: 'sounds/elephant',
-  },
-  {
-    img: 'img/monkey.png',
-    color: '#ffc48b',
-    word: 'monkey',
-    sound: 'sounds/monkey',
-  },
+  { img: 'img/elephant1.png', color: '#a36513', word: 'elephant', sound: 'sounds/elephant'},
+  { img: 'img/monkey.png', color: '#ffc48b', word: 'monkey', sound: 'sounds/monkey'},
   { img: 'img/bear.png', color: '#807148', word: 'bear', sound: 'sounds/bear' },
-  {
-    img: 'img/horse.png',
-    color: '#bc9e6c',
-    word: 'horse',
-    sound: 'sounds/horse',
-  },
+  { img: 'img/horse.png', color: '#bc9e6c', word: 'horse', sound: 'sounds/horse'},
   { img: 'img/bull.png', color: '#ff5f09', word: 'bull', sound: 'sounds/bull' },
   { img: 'img/rabbit.png', color: '#c81f27', word: 'rabbit', sound: '' },
-  {
-    img: 'img/tiger.png',
-    color: '#b3eef4',
-    word: 'tiger',
-    sound: 'sounds/tigger',
-  },
+  { img: 'img/tiger.png', color: '#b3eef4', word: 'tiger', sound: 'sounds/tigger'},
   { img: 'img/turtle.png', color: '#d5ea86', word: 'turtle', sound: '' },
-  {
-    img: 'img/lion1.png',
-    color: '#dd992d',
-    word: 'lion',
-    sound: 'sounds/lion',
-  },
+  { img: 'img/lion1.png', color: '#dd992d', word: 'lion', sound: 'sounds/lion'},
   //objetos novos
   { img: 'img/cow.png', color: '#fffff', word: 'cow', sound: 'sounds/cow' },
-  {
-    img: 'img/rooster.png',
-    color: '#ffca8a',
-    word: 'rooster',
-    sound: 'sounds/rooster',
-  },
+  { img: 'img/rooster.png', color: '#ffca8a', word: 'rooster', sound: 'sounds/rooster'},
   { img: 'img/dog.png', color: '#c27e4e', word: 'dog', sound: 'sounds/dog' },
   { img: 'img/owl.png', color: '#783e22', word: 'owl', sound: 'sounds/owl' },
   { img: 'img/duck.png', color: '#fbdd56', word: 'duck', sound: 'sounds/duck' },
   { img: 'img/bee.png', color: '#ffbe0b', word: 'bee', sound: 'sounds/bee' },
   { img: 'img/giraffe.png', color: '#ee9b00', word: 'giraffe', sound: '' },
-  {
-    img: 'img/hipoppotamus.png',
-    color: '#6c757d',
-    word: 'hipoppotamus',
-    sound: '',
-  },
-  {
-    img: 'img/leopard.png',
-    color: '#fb8b24',
-    word: 'leopard',
-    sound: 'sounds/leopard',
-  },
+  { img: 'img/hipoppotamus.png', color: '#6c757d', word: 'hipoppotamus', sound: ''},
+  { img: 'img/leopard.png', color: '#fb8b24', word: 'leopard', sound: 'sounds/leopard'},
   { img: 'img/cat.png', color: '#f18701', word: 'cat', sound: 'sounds/meow' },
 ];
 
 //criou um group dos sons
-//<<<<<<< HEAD
-var winSound = new buzz.sound('sounds/win'),
-  errorSound = new buzz.sound('sounds/error'),
-  alphabetSounds = {},
-  alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
 var winSound = new buzz.sound('sounds/win'),
   errorSound = new buzz.sound('sounds/error'),
@@ -219,7 +174,7 @@ $(function () {
 
       rotate(this, angle);
 
-      // quando voce pega a letra ja emite o som especifico daquela  letra
+      // quando "segura" (mousedown) a letra ja emite o som especifico daquela  letra
       $(this).mousedown(function () {
         var letter = $(this).text();
         if (alphabetSounds[letter]) {
